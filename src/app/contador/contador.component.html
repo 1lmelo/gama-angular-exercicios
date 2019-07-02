@@ -1,4 +1,16 @@
 
-<span>Contador: {{contador}} </span>
+<span class="contador">Contador: {{contador}} </span>
+
+<div class="botoes">
+    <button class="btn btn-danger" (click)="menor()">-</button>
+    <button class="btn btn-primary" (click)="maior()">+</button>
+</div>
+
+<div *ngIf="contador < 0;" [ngStyle]="{ background: contador < 0 ? 'red' : 'green' }" [ngClass]="{ msg: contador < 0 }">
+    Seu numero é menor que 0
+</div>
 
 
+<div *ngIf="contador > 0;" [ngStyle]="{ background: contador > 0 ? 'green' : 'red' }" [ngClass]="{ msg: contador > 0 }">
+    Seu numero é maior que 0
+</div>

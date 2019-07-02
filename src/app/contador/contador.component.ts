@@ -10,15 +10,17 @@ export class ContadorComponent implements OnInit {
   
   constructor() { }
 
+  menor(){
+    this.contador--;
+  }
+
+  maior(){
+    this.contador++;
+  }
    
      
 
   ngOnInit() {
-
-    setInterval(()=>{
-      this.contador++;
-    }, 1000);
-
   }
 
 }

@@ -1,0 +1,31 @@
+.contador{
+    color: #666;
+    font-size: 3em;
+   justify-content: center;
+   display: flex;
+   padding-top: 10%;
+}
+
+
+.btn{
+    width: 150px;
+    height: 50px;
+    margin-left: 3%;
+    font-size: 2em;
+    padding-bottom: 4%;
+}
+
+.botoes{
+    justify-content: center;
+    display: flex;
+    margin-top: 4%;
+}
+
+
+.msg{
+    color: #fff;
+    font-size: 2em;
+    margin-top: 3%;
+    text-align: center;
+
+}
