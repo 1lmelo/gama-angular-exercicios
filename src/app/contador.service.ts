@@ -17,4 +17,9 @@ export class ContadorService {
   }
 
 
+  addLista(lista: Lista){
+      return this.http.post<Lista>(this.URL, lista);
+  }
+
+
 }

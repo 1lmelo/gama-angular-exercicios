@@ -1,0 +1,30 @@
+<div class="container col-xl-12">
+    <h1 style="text-align: center; margin-top: 5%;">Formulário Lista</h1>
+    <form class="col-xl-8" style="margin-left: 15%; margin-top: 5%;">
+        <div class="form-group">
+          <label for="title">Linguagem: </label>
+          <input type="text" class="form-control" id="title" placeholder="Digite o nome da Linguagem" 
+          [(ngModel)]="lista.name" name='linguagem' #title="ngModel" required>
+          <div *ngIf="title.invalid && title.touched">
+                O campo é inválido           
+              </div>
+        </div>
+        <div class="form-group">
+          <label for="criador">Criador: </label>
+          <input type="text" class="form-control" id="criador" placeholder="Digite o nome do Criador" 
+          [(ngModel)]="lista.creator" name="criador" #criador="ngModel" required>
+          <div *ngIf="criador.invalid && criador.touched">
+                O campo é inválido           
+              </div>
+        </div>
+        <div class="form-group">
+          <label for="ano">Ano de Criação: </label>
+          <input type="text" class="form-control" id="ano" placeholder="Digite o ano de Criador" 
+          [(ngModel)]="lista.year" name="ano" #ano="ngModel" required>
+          <div *ngIf="ano.invalid && ano.touched">
+                O campo é inválido           
+              </div>
+        </div>
+        <button type="submit" class="btn btn-primary" (click)="enviarLista()">Enviar</button>
+      </form>
+</div>
