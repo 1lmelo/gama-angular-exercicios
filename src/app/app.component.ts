@@ -9,6 +9,7 @@ import { ListaItemComponent } from './lista-item/lista-item.component';
 })
 export class AppComponent implements OnInit {
   title = 'gama-angular-exercicios';
+  lista = [];
 
   constructor(public contadorService: ContadorService){
     contadorService.getLista().subscribe(value => {
